@@ -105,6 +105,7 @@ body {
 .home__name {
   color: var(--color-white);
   font-size: var(--font-large);
+  text-shadow: 5px 10px 5px #000;
 }
 
 .name__text {
