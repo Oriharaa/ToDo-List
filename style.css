@@ -20,6 +20,16 @@
   --color-indigo: indigo;
   --color-pink-hot: #ff3399;
   --color-white-ghost: rgba(255, 255, 255, 0.2);
+  --color-pink-light: #dbd8c7;
+
+  /* #fee1ff;
+  #fecde3; // pink
+  #f4feb5; // yellow
+  #bef9fd; // skublue?
+  #dbd8c7; // beige pink
+  #c7ff9e; // 살구색
+  */
+
   /* Font size */
   --font-large: 48px;
   --font-medium: 28px;
@@ -55,7 +65,7 @@ button {
 body {
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  background: url("Image/main6.jpg");
+  background: url("Image/main7.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -89,8 +99,8 @@ body {
   display: flex;
   justify-content: center;
   line-height: 80px;
-  color: var(--color-blue-bottle);
   transform: scale(3.2);
+  color: var(--color-pink-light);
 }
 
 .home__container {
@@ -102,13 +112,14 @@ body {
   align-items: center;
 }
 
-.home__name {
+.home__text {
   color: var(--color-white);
   font-size: var(--font-large);
-  text-shadow: 5px 10px 5px #000;
+  font-weight: var(--weight-bold);
+  text-shadow: 5px 5px 15px #000;
 }
 
-.name__text {
+.home__input {
   width: 562px;
   background: none;
   border: none;
@@ -118,6 +129,15 @@ body {
   font-weight: var(--weight-bold);
   outline-style: none;
   text-align: center;
+}
+
+.home__terms {
+  color: #fff;
+}
+
+.home__termsLink {
+  font-size: 16px;
+  color: #fff;
 }
 
 .home__continue {
@@ -135,15 +155,12 @@ body {
   margin-bottom: 20px;
 }
 
-.home__footer span,
-.home__footer button {
-  color: var(--color-white);
-  font-size: var(--font-regular);
-}
 .home__footer button {
   width: 150px;
   height: 40px;
-  background: none;
+  background: transparent;
+  color: var(--color-white);
+  font-size: var(--font-regular);
   border: 1px solid var(--color-white);
   border-radius: 20px;
   margin-left: 20px;
